@@ -1,0 +1,23 @@
+[project]
+name = "mcp-math"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "toyou.dev@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastmcp>=3.4.11",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-openrouter>=0.2.9",
+    "langchain[openai]>=1.5.0",
+    "langgraph>=1.2.22",
+]
+
+[project.scripts]
+mcp-math = "mcp_math:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
